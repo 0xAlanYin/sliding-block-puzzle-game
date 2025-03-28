@@ -1,0 +1,119 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* 整体应用样式 */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* 页眉 */
+.app-header {
+  background-color: #1976d2;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.instruction-button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #1976d2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.instruction-button:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-2px);
+}
+
+.instruction-button:active {
+  transform: translateY(0);
+}
+
+/* 主要内容区域 */
+main {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f0f2f5;
+}
+
+/* 页脚 */
+.app-footer {
+  background-color: #333;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.8rem;
+  }
+  
+  .app-header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+}
